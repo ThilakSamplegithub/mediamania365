@@ -1,0 +1,13 @@
+
+.navbar:hover{
+    text-decoration:underline;
+    color:#2C4BFF
+}
+.horizontal{
+    /* border:1px solid red; */
+    margin-left:350px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
