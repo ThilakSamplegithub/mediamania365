@@ -1,5 +1,5 @@
 import CardComponent from "./CardComponent"
-import { Box } from '@chakra-ui/react'
+import { Box, SimpleGrid } from '@chakra-ui/react'
 export default function ChunkofCards(){
     const arr=[
         {
@@ -36,7 +36,7 @@ export default function ChunkofCards(){
         }
     ]
     return(
-        <Box>
+        <Box  ml='20px' pl='10px' mt='50px'>
          {arr.map(({startingText,heading,text,img,btnText,id})=><CardComponent id={id} key={id} startingText={startingText} text={text} img={img} btnText={btnText} heading={heading} />)}
         </Box>
         

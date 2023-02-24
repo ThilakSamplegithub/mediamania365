@@ -23,14 +23,21 @@ import {
     ChevronDownIcon,
     ChevronRightIcon,
   } from '@chakra-ui/icons';
+  import FooterofNavPage from './FooterofNavPage';
   import logo from "../Images/Mediamania365.png"
+  import PauseOnHover from './CarouselofNavBar';
   import {Link as RouterLink} from "react-router-dom"
   import styles from "./NavigationBar.module.css"
+  import ChunkofCards from './ChunkofCards';
+  import AfterNavBar from './AfterNavBar';
+  import Ratings from './Ratings';
+  import TopOfNavBar from './TopOfNavBar';
+  
   export default function NavigationBar() {
     const { isOpen, onToggle } = useDisclosure();
   
     return (
-      <Box >
+      <Box  >
         <Flex
           bg={useColorModeValue('white', 'gray.800')}
           color={useColorModeValue('gray.600', 'white')}
@@ -73,12 +80,12 @@ import {
               variant={'link'}
               color="primary"
               href={'#'}>
-              Log In
+              <RouterLink to="/login">Log In</RouterLink>
             </Button>
             <Button
               as={'a'}
               display={{ base: 'none', md: 'inline-flex' }}
-              fontSize={'sm'}
+              fontSize={'l'}
               fontWeight={600}
               color={'white'}
               bg='primary'
@@ -86,7 +93,7 @@ import {
               _hover={{
                 bg: 'primary',
               }}>
-              Get Started
+              Get Started now
             </Button>
           </Stack>
         </Flex>
@@ -94,6 +101,11 @@ import {
         <Collapse in={isOpen} animateOpacity>
           <MobileNav />
         </Collapse>
+        <AfterNavBar/>
+        <ChunkofCards/>
+        <PauseOnHover/>
+        <Ratings/>
+        <FooterofNavPage/>
       </Box>
     );
   }
@@ -340,3 +352,4 @@ import {
       to:'/blog'
     },
   ];
+  // <ChunkofCards/>

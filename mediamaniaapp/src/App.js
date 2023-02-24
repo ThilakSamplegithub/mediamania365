@@ -4,12 +4,21 @@ import './App.css';
 import AllRoutes from './Components/AllRoutes';
 import WithSubnavigation from './Components/NavigationBar';
 import ChunkofCards from './Components/ChunkofCards';
+import PauseOnHover from './Components/CarouselofNavBar';
+import FooterofNavPage from './Components/FooterofNavPage';
+import AfterNavBar from './Components/AfterNavBar';
+import Ratings from './Components/Ratings';
+import TopOfNavBar from './Components/TopOfNavBar';
+import LoginPage from './Components/LoginPage';
 function App() {
   return (
     <>
-    <AllRoutes/>
-    <ChunkofCards/>
-    {/* <WithSubnavigation/> */}
+    <AllRoutes   />
+    {/* <FooterofNavPage/> */}
+    {/* <AfterNavBar/> */}
+    {/* <Ratings/> */}
+    {/* <TopOfNavBar/> */}
+    {/* <LoginPage/> */}
     </>
   );
 }
